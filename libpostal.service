@@ -1,11 +1,11 @@
 [Unit]
-description=libpostal
+Description=libpostal
 After=network.target
 
 [Service]
-ExecStart=/home/tim/pelias/go-whosonfirst-libpostal/bin/wod-libpostal-server
+ExecStart=/home/tim/pelias/go-whosonfirst-libpostal/bin/wof-libpostal-server
 User=tim
-WorkingDirectory=/home/tim/pelis
+WorkingDirectory=/home/tim/pelias
 Restart=Always
 
 [Install]
