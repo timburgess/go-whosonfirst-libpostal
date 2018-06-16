@@ -1,0 +1,12 @@
+[Unit]
+description=libpostal
+After=network.target
+
+[Service]
+ExecStart=/home/tim/pelias/go-whosonfirst-libpostal/bin/wod-libpostal-server
+User=tim
+WorkingDirectory=/home/tim/pelis
+Restart=Always
+
+[Install]
+WantedBy=multi-user.target
