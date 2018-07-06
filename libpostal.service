@@ -6,6 +6,8 @@ After=network.target
 ExecStart=/home/tim/pelias/go-whosonfirst-libpostal/bin/wof-libpostal-server
 User=tim
 WorkingDirectory=/home/tim/pelias
+StandardOut=file:/home/tim/log/libpostal.log
+StandardError=file:/home/tim/log/libpostal.err.log
 Restart=Always
 
 [Install]
